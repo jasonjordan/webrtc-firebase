@@ -9,7 +9,7 @@ const yourId = Math.floor(Math.random() * 1000000000)
 
 let p = null
 
-import { database } from './firebase-init.js'
+import { } from 'firebase/database';
 
 function readMessage(data) {
   const msg = JSON.parse(data.val().message)
