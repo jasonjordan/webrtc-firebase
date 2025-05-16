@@ -1,4 +1,4 @@
-const config = {
+const firebaseConfig = {
   apiKey: "AIzaSyAVGQi8Shm9nxyDKupuQCYMPT6PpRlSlBU",
   authDomain: "tripchat2.firebaseapp.com",
   databaseURL: "https://tripchat2-default-rtdb.asia-southeast1.firebasedatabase.app",
