@@ -1,3 +1,13 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getDatabase } from "firebase/database";
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAVGQi8Shm9nxyDKupuQCYMPT6PpRlSlBU",
   authDomain: "tripchat2.firebaseapp.com",
@@ -9,8 +19,7 @@ const firebaseConfig = {
   measurementId: "G-JZ8HJR4DS8"
 };
 
-firebase.initializeApp(firebaseConfig)
-
-const database = firebase.database().ref()
-
-export { database }
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const database = getDatabase(app);
