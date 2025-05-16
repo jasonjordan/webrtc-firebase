@@ -25,11 +25,7 @@ function readMessage(data) {
             { urls: 'stun:stun.l.google.com:19302' },
             { urls: 'stun:global.stun.twilio.com:3478?transport=udp' },
             { urls: 'stun:stun.services.mozilla.com' },
-            {
-              urls: 'turn:numb.viagenie.ca',
-              credential: '****',
-              username: '****',
-            },
+            { urls: 'turn:turn.cloudflare.com:3478' }
           ],
         },
       })
@@ -77,11 +73,7 @@ showMyFaceButton.addEventListener('click', async e => {
           { urls: 'stun:stun.l.google.com:19302' },
           { urls: 'stun:global.stun.twilio.com:3478?transport=udp' },
           { urls: 'stun:stun.services.mozilla.com' },
-          {
-            urls: 'turn:numb.viagenie.ca',
-            credential: 'hiragana',
-            username: 'mornirmornir@hotmail.com',
-          },
+          { urls: 'turn:turn.cloudflare.com:3478' }
         ],
       },
     })
